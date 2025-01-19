@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentMigrator.Runner.Core" />
+      <PackageReference Include="Npgsql" />
+      <PackageReference Include="Spectre.Console" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AllMigrations\AllMigrations.csproj" />
+      <ProjectReference Include="..\Lab5Application\Lab5Application.csproj" />
+      <ProjectReference Include="..\Lab5Infrastructure\Lab5Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
